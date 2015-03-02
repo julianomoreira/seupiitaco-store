@@ -1,0 +1,279 @@
+{
+  "name": "Luna",
+  "version": "1.3.4",
+  "images": [
+    {
+      "variable": "header",
+      "label": "Header image",
+      "description": "Transparent background recommended"
+    },
+    {
+      "variable": "background",
+      "label": "Background Image",
+      "description": "Adds a repeating background image"
+    }
+  ],
+  "image_sets": [
+    {
+      "variable": "slideshow",
+      "label": "Slideshow",
+      "description": "900px by 500px images recommended"
+    }
+  ],
+  "fonts": [
+    {
+      "variable": "header_font",
+      "label": "Header Font",
+      "default": "Varela Round"
+    },
+    {
+      "variable": "body_font",
+      "label": "Body Font",
+      "default": "Times New Roman"
+    }
+  ],
+  "colors": [
+    {
+      "variable": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "variable": "background_secondary",
+      "label": "Background secondary",
+      "default": "#f0f0f0"
+    },
+    {
+      "variable": "text",
+      "label": "Text",
+      "default": "#333333"
+    },
+    {
+      "variable": "text_secondary",
+      "label": "Text secondary",
+      "default": "#999999"
+    },
+    {
+      "variable": "text_tertiary",
+      "label": "Text tertiary",
+      "default": "#666666"
+    },
+    {
+      "variable": "links",
+      "label": "Links",
+      "default": "#333333"
+    },
+    {
+      "variable": "links_rollover",
+      "label": "Link rollovers",
+      "default": "#888888"
+    },
+    {
+      "variable": "header_text",
+      "label": "Header text",
+      "default": "#333333"
+    },
+    {
+      "variable": "products_background",
+      "label": "Products background rollovers",
+      "default": "#000000"
+    },
+    {
+      "variable": "borders",
+      "label": "Borders",
+      "default": "#e5e5e5"
+    },
+    {
+      "variable": "button_border",
+      "label": "Button",
+      "default": "#000000"
+    },
+    {
+      "variable": "button_border_hover",
+      "label": "Button rollover",
+      "default": "#777777"
+    },
+    {
+      "variable": "inventory_bars",
+      "label": "Inventory Bars",
+      "default": "#999999"
+    }
+  ],
+  "options": [
+    {
+      "variable": "featured_products",
+      "label": "Featured products",
+      "type": "select",
+      "options": "1..100",
+      "default": 6,
+      "description": "The number of products shown on the Home page"
+    },
+    {
+      "variable": "featured_order",
+      "label": "Featured products order",
+      "type": "select",
+      "options": "product_orders",
+      "default": "position",
+      "description": "The order of products on the Home page"
+    },
+    {
+      "variable": "products_per_page",
+      "label": "Products per page",
+      "type": "select",
+      "options": "1..100",
+      "default": 9,
+      "description": "The number of products shown at a time on the Products page"
+    },
+    {
+      "variable": "show_inventory_bars",
+      "label": "Show inventory bars",
+      "type": "boolean",
+      "default": false,
+      "description": "Shows a product's inventory amounts (when using inventory tracking)",
+      "requires": "inventory"
+    },
+    {
+      "variable": "show_search",
+      "label": "Show search",
+      "type": "boolean",
+      "default": false,
+      "description": "Shows the product search area"
+    },
+    {
+      "variable": "show_facebook",
+      "label": "Show Facebook's Like button",
+      "type": "boolean",
+      "default": true,
+      "description": "Adds a Like button to the Product page"
+    },
+    {
+      "variable": "show_twitter",
+      "label": "Show Twitter's Tweet button",
+      "type": "boolean",
+      "default": true,
+      "description": "Adds a Tweet button to the Product page"
+    },
+    {
+      "variable": "show_pinterest",
+      "label": "Show Pinterest's Pin It button",
+      "type": "boolean",
+      "default": true,
+      "description": "Adds a Pin It button to the Product page"
+    },
+    {
+      "variable": "twitter_username",
+      "label": "Twitter username",
+      "type": "text",
+      "description": "Ex: bigcartel"
+    },
+    {
+      "variable": "facebook_username",
+      "label": "Facebook username",
+      "type": "text",
+      "description": "Ex: bigcartel"
+    }
+  ],
+  "checkout": {
+    "optimize_legibility": "optimizeLegibility",
+    "antialias_text": "antialiased",
+    "header_image": "{{ header }}",
+    "header_width": "900px",
+    "background_image": "{{ background }}",
+    "background_color": "{{ background_secondary }}",
+    "gutter_width": "28px",
+    "title_font": "{{ header_font }}",
+    "title_vertical_padding": "60px",
+    "title_background_color": "transparent",
+    "title_position": "center",
+    "title_font_size": "42px",
+    "title_font_weight": "normal",
+    "title_text_transform": "uppercase",
+    "title_color": "{{ header_text }}",
+    "body_font": "{{ body_font }}",
+    "body_font_size": "15px",
+    "content_border_radius": "0",
+    "content_width": "530px",
+    "content_header_vertical_padding": "28px",
+    "content_background_color": "{{ background_color }}",
+    "content_banded": "true",
+    "content_header_height": "120px",
+    "content_horizontal_padding": "0",
+    "content_header_background_color": "{{ background_color }}",
+    "content_border_color": "transparent",
+    "content_border_width": "0",
+    "content_header_font_size": "24px",
+    "content_header_color": "{{ text }}",
+    "content_color": "{{ text }}",
+    "link_font_size": "13px",
+    "link_color": "{{ links }}",
+    "link_hover_color": "{{ link_rollovers }}",
+    "error_border_width": "0",
+    "error_font_size": "13px",
+    "error_background_color": "#ea4859",
+    "error_color": "#ffffff",
+    "error_border_radius": "0",
+    "error_border_color": "#ea4859",
+    "custom_inputs": true,
+    "input_focus_color": "#000000",
+    "input_focus_background_color": "#ffffff",
+    "input_border_radius": "0",
+    "input_focus_border_color": "#bfbfbf",
+    "input_error_border_color": "#ea4859",
+    "input_color": "#000000",
+    "input_error_color": "#000000",
+    "input_border_color": "#bfbfbf",
+    "input_font_size": "13px",
+    "input_font": "{{ body_font }}",
+    "input_horizontal_padding": "8px",
+    "input_border_width": "2px",
+    "input_height": "37px",
+    "input_background_color": "#ffffff",
+    "input_error_background_color": "#ffffff",
+    "label_text_transform": "normal",
+    "label_color": "#999999",
+    "label_font_weight": "normal",
+    "label_font_size": "13px",
+    "in_field_labels": false,
+    "button_border_color": "{{ button_border }}",
+    "button_border_radius": "0",
+    "button_hover_border_color": "{{ button_border_hover }}",
+    "button_height": "47px",
+    "button_border_width": "2px",
+    "button_font_size": "14px",
+    "button_font_weight": "normal",
+    "button_text_transform": "uppercase",
+    "button_background_color": "{{ background_color }}",
+    "button_color": "{{ button_border }}",
+    "button_hover_color": "{{ button_border_hover }}",
+    "button_position": "center",
+    "button_hover_background_color": "{{ background_color }}",
+    "step_inactive_header_color": "opacify({{ text_secondary }}, .25)",
+    "step_border_color": "{{ borders }}",
+    "step_border_width": "1px",
+    "step_header_text_transform": "uppercase",
+    "step_background_color": "{{ background_color }}",
+    "step_inactive_border_color": "opacify({{ borders }}, .25)",
+    "step_header_font_weight": "normal",
+    "step_header_color": "{{ text }}",
+    "step_header_position": "center",
+    "step_inactive_background_color": "{{ background_color }}",
+    "step_vertical_padding": "30px",
+    "step_header_font_size": "24px",
+    "step_border_style": "solid",
+    "step_header_font": "{{ header_font }}",
+    "summary_inactive_item_border_color": "opacify({{ text_secondary }}, .25)",
+    "summary_font_size": "13px",
+    "summary_submit_background_color": "{{ background_color }}",
+    "summary_inactive_color": "opacify({{ text_secondary }}, .25)",
+    "summary_submit_border_color": "opacify({{ text_secondary }}, .25)",
+    "summary_item_border_width": "1px",
+    "summary_item_border_color": "{{ borders }}",
+    "summary_secondary_color": "{{ text }}",
+    "summary_submit_border_width": "1px",
+    "summary_item_list_border_color": "{{ borders }}",
+    "summary_inactive_secondary_color": "opacify({{ text_secondary }}, .25)",
+    "summary_item_list_border_width": "2px",
+    "summary_color": "{{ text }}",
+    "summary_inactive_item_list_border_color": "opacify({{ text_secondary }}, .25)"
+  }
+}
